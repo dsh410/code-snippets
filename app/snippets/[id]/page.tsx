@@ -22,6 +22,6 @@ export default async function SnippetDetailPage({ params }: SnippetPageProps) {
   }
 
   return (
- <SnippetById snippet={snippet} />
+        <SnippetById snippet={snippet} />
   )
 }
