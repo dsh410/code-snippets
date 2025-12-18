@@ -1,14 +1,11 @@
 'use client'
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+import { useState } from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import {Snippet} from '@prisma/client';
 
-interface Snippet {
-  id: number
-  title: string
-  code: string
-}
+
 
 interface EditSnippetFormProps {
   snippet: Snippet

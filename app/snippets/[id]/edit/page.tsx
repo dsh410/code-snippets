@@ -2,13 +2,13 @@ import { prisma } from '@/lib/prisma'
 import { notFound } from 'next/navigation'
 import EditSnippetForm from '@/components/EditSnippetForm'
 
-interface EditSnippetPageContainerProps {
+interface EditSnippetPageProps {
   params: Promise<{
     id: string
   }>
 }
 
-export default async function EditSnippetPageContainer({ params }: EditSnippetPageContainerProps) {
+export default async function EditSnippetPage({ params }: EditSnippetPageProps) {
   // Add artificial delay to test loading component
   await new Promise(resolve => setTimeout(resolve, 2000))
   
